@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--tranparent-text-color);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xsm);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xsm);
+}
+
+.user-name {
+    line-height: 1;
+}
+
+.user-description {
+    font-weight: 300;
+    color: var(--tranparent-text-color);
+}
+
+.avatar {
+    width: var(--space-ulg);
+    height: var(--space-ulg);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

@@ -1,5 +1,5 @@
 import "./styles.css";
-import {ActionButton} from "../actionButton";
+import {ActionButton} from "src/components/actionButton";
 import More from "src/assets/more.svg?react"
 import Video from "src/assets/video.svg?react"
 import Edit from "src/assets/edit.svg?react"

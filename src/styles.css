@@ -1,10 +1,14 @@
 :root {
   --border-color: rgba(255, 255, 255, 0.16);
-  --bg-color: rgba(46, 77, 210, 0.4);
+  --bg-color: rgba(46, 77, 210, 0.3);
+  --bg-color-light: rgba(150, 180, 253, 0.7);
+  --tranparent-text-color: rgba(255, 255, 255, 0.47);
+  --white-color: #fff;
   --space-xsm: 10px;
   --space-sm: 12px;
   --space-md: 16px;
   --space-lg: 20px;
+  --space-mlg: 24px;
   --space-xlg: 32px;
   --space-ulg: 42px;
 }
@@ -14,8 +18,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+  color: var(--white-color);
 }
-
 
 button {
   display: flex;
@@ -30,6 +34,10 @@ button, input {
   cursor: pointer;
 }
 
+input::placeholder {
+  color: var(--tranparent-text-color);
+}
+
 body {
   background-image: url("./assets/bg.jpg");
   background-repeat: no-repeat;
@@ -38,7 +46,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  color: white;
 }
 
 .container {
@@ -49,5 +56,15 @@ body {
   backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid var(--border-color);
   display: flex;
-  gap: var(--space-sm);
+}
+
+.lg-imgs {
+  svg {
+    width: var(--space-mlg);
+    height: var(--space-mlg);
+  }
+}
+
+.relative {
+  position: relative;
 }

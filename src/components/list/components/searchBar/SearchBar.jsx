@@ -7,14 +7,14 @@ import {useState} from "react";
 
 export const SearchBar = () => {
     const [addMode, setEddMode] = useState(false);
-    const [searchValue, setSearcValue] = useState("");
+    const [searchValue, setSearchValue] = useState("");
 
     const handleChangeAddMode = () => {
         setEddMode(prev => !prev);
     }
 
     const handleChangeSearchValue = (event) => {
-        setSearcValue(event.target.value);
+        setSearchValue(event.target.value);
     }
 
     return (
