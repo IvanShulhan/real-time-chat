@@ -1,0 +1,38 @@
+.chat-list-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    border-radius: var(--space-xsm);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+}
+
+.avatar {
+    width: var(--space-ulg);
+    height: var(--space-ulg);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xsm);
+    line-height: 1;
+}
+
+.user {
+    font-weight: 500;
+}
+
+.message {
+    font-size: 14px;
+    font-weight: 300;
+}

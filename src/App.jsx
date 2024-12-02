@@ -1,6 +1,16 @@
+import {Chat} from "./components/chat";
+import {Details} from "./components/details";
+import {List} from "./components/list";
+
 const App = () => {
   return (
-    <div className=''>App</div>
+    <div className='app'>
+      <div className="container">
+          <List />
+          <Chat />
+          <Details />
+      </div>
+    </div>
   )
 }
 

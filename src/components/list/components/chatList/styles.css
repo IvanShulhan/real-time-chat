@@ -1,0 +1,7 @@
+.chat-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    border-top: 1px solid var(--border-color);
+    padding: var(--space-sm) 0;
+}

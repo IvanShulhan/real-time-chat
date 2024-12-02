@@ -1,0 +1,8 @@
+.action-btn {
+    cursor: pointer;
+
+    svg {
+        width: var(--space-md);
+        height: var(--space-md);
+    }
+}

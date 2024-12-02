@@ -1,0 +1,53 @@
+:root {
+  --border-color: rgba(255, 255, 255, 0.16);
+  --bg-color: rgba(46, 77, 210, 0.4);
+  --space-xsm: 10px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xlg: 32px;
+  --space-ulg: 42px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button, input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  width: 90vw;
+  height: 90vh;
+  border-radius: var(--space-sm);
+  background-color: var(--bg-color);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--border-color);
+  display: flex;
+  gap: var(--space-sm);
+}
