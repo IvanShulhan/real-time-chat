@@ -1,6 +1,13 @@
 import styles from "./styles.module.css";
+import {useEffect, useRef} from "react";
 
 export const Content = () => {
+    const endRef = useRef(null);
+
+    useEffect(() => {
+        endRef?.current?.scrollIntoView({ behavior: "smooth" });
+    }, [endRef]);
+
     return (
         <div className={styles.content}>
             <div className={styles.messages}>
@@ -51,6 +58,7 @@ export const Content = () => {
                     </div>
                 </div>
             </div>
+            <div ref={endRef} />
         </div>
     )
 }

@@ -3,6 +3,8 @@
   --bg-color: rgba(46, 77, 210, 0.3);
   --bg-color-light: rgba(150, 180, 253, 0.7);
   --tranparent-text-color: rgba(255, 255, 255, 0.47);
+  --red-btn: rgba(239, 36, 68, 0.7);
+  --red-btn-hovered: rgb(239, 36, 68);
   --white-color: #fff;
   --space-xsm: 10px;
   --space-sm: 12px;
@@ -11,6 +13,7 @@
   --space-mlg: 24px;
   --space-xlg: 32px;
   --space-ulg: 42px;
+  --transition: "all 0.3s leanear"
 }
 
 * {
