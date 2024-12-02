@@ -1,0 +1,32 @@
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xsm);
+    position: relative;
+}
+
+.title {
+    font-weight: 500;
+    transform: translateX(6px);
+}
+
+.input {
+    width: 100%;
+    height: var(--space-ulg);
+    border-radius: var(--space-xsm);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    padding: 0 var(--space-xsm);
+}
+
+.password {
+    padding-right: var(--space-xlg);
+}
+
+.icon svg {
+    width: var(--space-lg);
+    height: var(--space-lg);
+    position: absolute;
+    right: var(--space-xsm);
+    bottom: calc(var(--space-ulg) / 2);
+}

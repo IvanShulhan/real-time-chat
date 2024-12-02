@@ -1,14 +1,10 @@
-import {Chat} from "./components/chat";
-import {Details} from "./components/details";
-import {List} from "./components/list";
+import {Router} from "src/routing/Router.jsx";
 
 const App = () => {
   return (
     <div className='app'>
       <div className="container">
-          <List />
-          <Chat />
-          <Details />
+          <Router />
       </div>
     </div>
   )

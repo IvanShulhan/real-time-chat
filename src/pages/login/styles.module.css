@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    padding: var(--space-xsm);
+    display: flex;
+    justify-content: space-between;
+}
+
+.side {
+    width: 49%;
+    height: 100%;
+}
+
+.divider {
+    height: 100%;
+    width: 1px;
+    background-color: var(--border-color);
+}
