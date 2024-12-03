@@ -1,4 +1,4 @@
-import styles from "./styles.module.css"
+import styles from "../../styles.module.css"
 import {useState} from "react";
 import {Input} from "src/components/input";
 
@@ -13,7 +13,7 @@ export const LoginSection = () => {
     }
 
     return (
-        <div className={styles.container}>
+        <div className={styles.sideContainer}>
             <h5>Welcome back,</h5>
             <div className={styles.content}>
                 <Input
@@ -30,6 +30,7 @@ export const LoginSection = () => {
                     value={loginData.password}
                     onChange={handleChangeLoginData}
                 />
+                <button className={styles.submitBtn}>Sign In</button>
             </div>
         </div>
     )

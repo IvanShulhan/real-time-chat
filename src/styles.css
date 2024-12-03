@@ -5,6 +5,8 @@
   --tranparent-text-color: rgba(255, 255, 255, 0.47);
   --red-btn: rgba(239, 36, 68, 0.7);
   --red-btn-hovered: rgb(239, 36, 68);
+  --submit-btn: rgba(125, 178, 75, 0.7);
+  --submit-btn-hovered: rgb(125, 178, 75);
   --white-color: #fff;
   --space-xsm: 10px;
   --space-sm: 12px;

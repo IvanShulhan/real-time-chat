@@ -4,7 +4,7 @@ import Eye from "src/assets/eye.svg?react"
 import EyeClosed from "src/assets/eye-closed.svg?react"
 import {twMerge} from "tailwind-merge";
 
-export const Input = ({ value, name, onChange, placeholder, type = "text", label = null, }) => {
+export const Input = ({ value, name, onChange, placeholder, type = "text", label = null }) => {
     const [showPassword, setShowPassword] = useState(false);
 
     const isPassword = type === "password";

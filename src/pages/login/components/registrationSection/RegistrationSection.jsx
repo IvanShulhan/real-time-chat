@@ -1,10 +1,13 @@
 import {useState} from "react";
 import {Input} from "src/components/input";
-import styles from "./styles.module.css"
+import styles from "../../styles.module.css"
 
 export const RegisterSection = () => {
     const [registerData, setRegisterData] = useState({
-        image: null,
+        image: {
+            file: null,
+            url: "",
+        },
         username: "",
         email: "",
         password: "",
@@ -14,10 +17,30 @@ export const RegisterSection = () => {
         setRegisterData((prev) => ({ ...prev, [event.target.name]: event.target.value }))
     }
 
+    const handleChangeImage = (event) => {
+        const file = event.target.files?.[0];
+
+        if (file) {
+            setRegisterData((prev) => ({
+                ...prev,
+                image: {
+                    file,
+                    url: URL.createObjectURL(file),
+                },
+            }));
+        }
+    };
+
+
     return (
-        <div className={styles.container}>
-            <h5>Create anAccount,</h5>
+        <div className={styles.sideContainer}>
+            <h5>Create an Account</h5>
             <div className={styles.content}>
+                <label className={styles.imageLabel}>
+                    <img className={styles.image} src={registerData.image.url || "src/assets/avatar.png"} alt="avatar" />
+                    <input type="file" style={{ display: "none" }} onChange={handleChangeImage} />
+                    <span>Upload an image</span>
+                </label>
                 <Input
                     type="text"
                     name="username"
@@ -39,6 +62,7 @@ export const RegisterSection = () => {
                     value={registerData.password}
                     onChange={handleChangeLoginData}
                 />
+                <button className={styles.submitBtn}>Sign Up</button>
             </div>
         </div>
     )

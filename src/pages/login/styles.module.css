@@ -15,3 +15,62 @@
     width: 1px;
     background-color: var(--border-color);
 }
+
+.sideContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md)
+}
+
+.sideContainer h5 {
+    font-size: 20px;
+}
+
+.content {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-xsm)
+}
+
+.imageLabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.imageLabel span {
+    font-weight: 300;
+}
+.imageLabel span:hover {
+    text-decoration: underline;
+}
+
+
+.image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--space-xsm);
+}
+
+.submitBtn {
+    width: 100%;
+    height: var(--space-ulg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--submit-btn);
+    transition: var(--transition);
+    border-radius: var(--space-xsm);
+}
+
+.submitBtn:hover {
+    background-color: var(--submit-btn-hovered);
+}
