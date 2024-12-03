@@ -11,16 +11,8 @@
     gap: var(--space-sm);
 }
 
-.sendBtn {
-    padding: var(--space-xsm) var(--space-lg);
-    border: 1px solid var(--border-color);
-    border-radius: var(--space-xsm);
-    transition: all 0.3s;
-    background-color: var(--bg-color-light);
-}
-
-.sendBtn:hover {
-    background-color: var(--bg-color);
+.btnWrapper {
+    width: 100px;
 }
 
 .search {

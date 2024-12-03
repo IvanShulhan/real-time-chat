@@ -59,18 +59,3 @@
     object-fit: cover;
     border-radius: var(--space-xsm);
 }
-
-.submitBtn {
-    width: 100%;
-    height: var(--space-ulg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--submit-btn);
-    transition: var(--transition);
-    border-radius: var(--space-xsm);
-}
-
-.submitBtn:hover {
-    background-color: var(--submit-btn-hovered);
-}

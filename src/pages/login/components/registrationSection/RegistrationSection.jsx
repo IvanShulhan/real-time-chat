@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {Input} from "src/components/input";
 import styles from "../../styles.module.css"
+import {Button} from "src/components/button/index.js";
 
 export const RegisterSection = () => {
     const [registerData, setRegisterData] = useState({
@@ -62,7 +63,7 @@ export const RegisterSection = () => {
                     value={registerData.password}
                     onChange={handleChangeLoginData}
                 />
-                <button className={styles.submitBtn}>Sign Up</button>
+                <Button onClick={() => {}}>Sign Up</Button>
             </div>
         </div>
     )

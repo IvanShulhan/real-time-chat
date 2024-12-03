@@ -13,15 +13,3 @@
     gap: var(--space-xsm);
     flex: 1;
 }
-
-.blockBtn {
-    width: 100%;
-    height: var(--space-ulg);
-    border-radius: var(--space-xsm);
-    background-color: var(--red-btn);
-    transition: var(--transition);
-}
-
-.blockBtn:hover {
-    background-color: var(--red-btn-hovered);
-}

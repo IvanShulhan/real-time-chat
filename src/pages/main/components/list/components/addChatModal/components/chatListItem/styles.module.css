@@ -1,0 +1,28 @@
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-xsm);
+    border-radius: var(--space-xsm);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+}
+
+.avatar {
+    width: var(--space-ulg);
+    height: var(--space-ulg);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.textBlock {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xsm);
+    line-height: 1;
+}
+
+.btnWrapper {
+    width: 60px;
+}

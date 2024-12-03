@@ -6,6 +6,7 @@ import Microphone from "src/assets/microphone.svg?react"
 import Emoji from "src/assets/emoji.svg?react"
 import { useState } from "react";
 import EmojiPicker from "emoji-picker-react";
+import {Button} from "src/components/button/index.js";
 
 export const Footer = () => {
     const [message, setMessage] = useState("");
@@ -49,7 +50,10 @@ export const Footer = () => {
                         <EmojiPicker open={open} setOpen={handleToggleOpen} onEmojiClick={handleClickEmoji} />
                     </div>
                 </ActionButton>
-                <div className={styles.sendBtn}>Send</div>
+                <div className={styles.btnWrapper}>
+                    <Button onClick={() => {}}>Send</Button>
+                </div>
+
             </div>
         </div>
     )

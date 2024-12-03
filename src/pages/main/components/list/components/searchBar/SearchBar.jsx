@@ -2,8 +2,8 @@ import "./styles.css";
 import Plus from "src/assets/plus.svg?react"
 import Minus from "src/assets/minus.svg?react"
 import Search from "src/assets/search.svg?react"
-
 import {useState} from "react";
+import {AddChatModal} from "../addChatModal";
 
 export const SearchBar = () => {
     const [addMode, setEddMode] = useState(false);
@@ -26,6 +26,8 @@ export const SearchBar = () => {
             <button onClick={handleChangeAddMode} className="add-btn">
                 {addMode ? <Minus /> : <Plus />}
             </button>
+            {addMode && <AddChatModal/>}
+
         </div>
     )
 }

@@ -1,0 +1,22 @@
+.button {
+    width: 100%;
+    height: var(--space-ulg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--submit-btn);
+    transition: var(--transition);
+    border-radius: var(--space-xsm);
+}
+
+.button.reject {
+    background-color: var(--red-btn);
+}
+
+.button:hover {
+    background-color: var(--submit-btn-hovered);
+}
+
+.button.reject:hover {
+    background-color: var(--red-btn-hovered);
+}

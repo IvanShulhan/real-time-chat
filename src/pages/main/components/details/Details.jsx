@@ -1,6 +1,7 @@
 import styles from "./styles.module.css"
 import { UserInfo } from "./components/userInfo/index.js";
 import { Accordeon } from "src/components/accordeon/index.js";
+import {Button} from "src/components/button/index.js";
 
 export const Details = () => {
     return (
@@ -12,7 +13,7 @@ export const Details = () => {
                 <Accordeon title="Shared photos"><div>3</div></Accordeon>
                 <Accordeon title="Shared files"><div>3</div></Accordeon>
             </div>
-            <button className={styles.blockBtn}>Block user</button>
+            <Button reject={true}>Block user</Button>
         </div>
     )
 }

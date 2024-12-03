@@ -1,6 +1,7 @@
 import styles from "../../styles.module.css"
 import {useState} from "react";
 import {Input} from "src/components/input";
+import {Button} from "src/components/button";
 
 export const LoginSection = () => {
     const [loginData, setLoginData] = useState({
@@ -30,7 +31,7 @@ export const LoginSection = () => {
                     value={loginData.password}
                     onChange={handleChangeLoginData}
                 />
-                <button className={styles.submitBtn}>Sign In</button>
+                <Button onClick={() => {}}>Sign In</Button>
             </div>
         </div>
     )

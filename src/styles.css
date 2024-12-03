@@ -1,6 +1,6 @@
 :root {
   --border-color: rgba(255, 255, 255, 0.16);
-  --bg-color: rgba(28, 21, 129, 0.38);
+  --bg-color: rgba(12, 23, 52, 0.9);
   --bg-color-light: rgba(150, 180, 253, 0.7);
   --tranparent-text-color: rgba(255, 255, 255, 0.47);
   --red-btn: rgba(239, 36, 68, 0.7);
@@ -61,6 +61,7 @@ body {
   backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid var(--border-color);
   display: flex;
+  position: relative;
 }
 
 .lg-imgs {
